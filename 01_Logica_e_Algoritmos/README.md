@@ -91,5 +91,6 @@ Sabemos que a potência (P) é dada pela fórmula: $P = V \times A$. Calcule a c
 
 **Comanda:** Crie um programa em Java que declare variáveis para armazenar código, nome e valor de custo de um produto. Calcule o valor de venda do produto, aplicando um acréscimo de 15% sobre o valor de custo. Por fim, exiba as informações do produto, incluindo o valor de venda calculado.
 
----
-*(...) Continue copiando os enunciados completos para os Exercícios 07 até 34, seguindo o padrão de subtítulos Markdown (Ex: `#### 7. Exercício 07: Cálculo de Idade com Scanner`).*
+### 7. Exercício 07: Cálculo de idade utilizando Scanner
+
+**Comanda:** Crie um programa Java que solicite o nome e o ano de nascimento do usuário. Em seguida, calcule e exiba a idade da pessoa com base no ano atual. 
