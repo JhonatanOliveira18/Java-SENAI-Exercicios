@@ -18,9 +18,9 @@ Este módulo abrange 34 exercícios desenvolvidos em Java, focados nos fundament
 
 ## 📋 Índice Detalhado dos Exercícios
 
-Abaixo, a lista completa de exercícios, com o tópico principal e o nome sugerido para o arquivo de código.
+Abaixo, a lista completa de exercícios, com o tópico principal e o nome do arquivo de código.
 
-| Nº | Tópico | Arquivo Java Sugerido |
+| Nº | Tópico | Arquivo Java   |
 | :--- | :--- | :--- |
 | **01** | Cálculo de Corrente (Fórmula P=V×A) | `Exercicio01CalculoCorrente.java` |
 | **02** | Operadores Aritméticos | `Exercicio02Operadores.java` |
