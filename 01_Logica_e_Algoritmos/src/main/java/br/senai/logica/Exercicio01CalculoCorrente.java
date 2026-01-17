@@ -11,7 +11,7 @@ package br.senai.logica;
  * - Chuveiro 03: 7500 W / 220 V
  */
 
-public class Exercicio01 {
+public class Exercicio01CalculoCorrente {
 
     public static void main(String[] args) {
         System.out.println("Rede eletrica de chuveiros");
