@@ -19,7 +19,7 @@ O conteúdo está organizado em pastas (módulos) que seguem a progressão do cu
 | Módulo | Foco Principal | Pastas (Exemplo) | Status |
 | :--- | :--- | :--- | :--- |
 | **01 - Lógica Fundamental** | Variáveis, Operadores, Estruturas de Decisão e Repetição. | `01_Fundamentos_e_Algoritmos` | ✅ Concluído |
-| **02 - Programação Orientada a Objetos** | Classes, Atributos, Métodos, Herança, Polimorfismo e Encapsulamento. | `02_POO_Essencial` | 🚧 Em Andamento |
+| **02 - Programação Orientada a Objetos** | Classes, Atributos, Métodos, Herança, Polimorfismo e Encapsulamento. | `02_Base_POO` | 🚧 Em Andamento |
 | **03 - Desenvolvimento de Interfaces** | Construção de GUIs (JavaFX/Swing), Tratamento de Eventos e Padrão MVC (opcional). | `03_Interface_Grafica` | 💡 Próximo |
 
 
