@@ -2,6 +2,7 @@
 
 [![Java Version](https://img.shields.io/badge/Java-21+-blue.svg)](https://www.java.com/)
 [![Status](https://img.shields.io/badge/Status-Concluído-green)]()
+[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://github.com/JhonatanOliveira18/Java-SENAI-Exercicios/blob/main/LICENSE)
 
 ## ✨ Visão Geral e Objetivo
 
