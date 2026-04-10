@@ -33,7 +33,7 @@ O conteúdo está organizado em pastas (módulos) que seguem a progressão do cu
 
 ## Como executar o programa
 
-**Pré-requisitos: JAVA 21**
+**Pré-requisitos: JAVA 21+**
 
 ```bash
 1. Clone o repositório:
