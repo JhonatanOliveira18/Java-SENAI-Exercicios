@@ -23,5 +23,25 @@ O conteúdo está organizado em pastas (módulos) que seguem a progressão do cu
 | **02 - Programação Orientada a Objetos** | Classes, Atributos, Métodos, Herança, Polimorfismo e Encapsulamento. | `02_Base_POO` |
 | **03 - Desenvolvimento de Interfaces** | Construção de GUIs (JavaFX/Swing), Tratamento de Eventos e Padrão MVC (opcional). | `03_Interface_Grafica` | 
 
+## 🛠️ Tecnologias e Ferramentas
+
+<div align="center">
+  <img title="Java" src="https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white" />
+  <img title="NetBeans" src="https://img.shields.io/badge/NetBeans-1B6AC6?style=for-the-badge&logo=apache-netbeans&logoColor=white" />
+  <img title="Git" src="https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white" />
+</div>
+
+## Como executar o programa
+
+**Pré-requisitos: JAVA 21**
+
+```bash
+1. Clone o repositório:
+git clone https://github.com/JhonatanOliveira18/Java-SENAI-Exercicios.git
+
+2. Importe o projeto em sua IDE (Eclipse/IntelliJ/VS Code).
+
+3. Execute os exercicios.
+```   
 
 ***
