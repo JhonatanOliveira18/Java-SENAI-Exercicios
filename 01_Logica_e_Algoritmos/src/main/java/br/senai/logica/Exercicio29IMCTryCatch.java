@@ -31,15 +31,15 @@ public class Exercicio29IMCTryCatch {
             }catch(NumberFormatException e){
                  JOptionPane.showMessageDialog(null, "Você não inseriu os dados corretamente.");
                  continue;
+            }     
                  
-            }catch (NullPointerException e){ // encerra o looping caso o usuario aperte cancelar
-                JOptionPane.showMessageDialog(null, "Você apertou cancel e o programa morreu");
-                break;
-            }
             //Calculo do IMC
             imc = peso / (altura * altura);
             
-            //Estrutura condicional para chegar o IMC 
+            //Exibindo dados para o usuario
+            JOptionPane.showMessageDialog(null, nome + ", seu IMC é: " + String.format("%.2f", imc));
+            
+            //Estrutura condicional para checar o IMC 
             if(imc < 18.5){
                 JOptionPane.showMessageDialog(null,"Você está abaixo do peso ideal!!!!");
             }
@@ -47,7 +47,7 @@ public class Exercicio29IMCTryCatch {
                 JOptionPane.showMessageDialog(null,"Parabéns você está com peso normal");
             }
             else if(imc <= 29.9){
-                JOptionPane.showMessageDialog(null,"Voce esta acima do seu peso!! Imenso.");
+                JOptionPane.showMessageDialog(null,"Voce esta acima do seu peso!!");
             }
             else if(imc <= 34.9){
                 JOptionPane.showMessageDialog(null,"OBESIDADE GRAU 1");
@@ -56,12 +56,12 @@ public class Exercicio29IMCTryCatch {
                 JOptionPane.showMessageDialog(null,"OBESIDADE GRAU 2");
             }
             else{
-                JOptionPane.showMessageDialog(null,"OBESIDAE GRAU 3");
+                JOptionPane.showMessageDialog(null,"OBESIDADE GRAU 3");
             }
 
             escolha = JOptionPane.showInputDialog(null, "Deseja realizar outro calculo?\n[S]Sim\n[N]Encerra o programa.");
 
-        }while (escolha.equalsIgnoreCase("S"));
+        }while (escolha != null && escolha.equalsIgnoreCase("S"));
 
         //Mensagem final
         JOptionPane.showMessageDialog(null, "FIM\nObrigado por usar o programa.");

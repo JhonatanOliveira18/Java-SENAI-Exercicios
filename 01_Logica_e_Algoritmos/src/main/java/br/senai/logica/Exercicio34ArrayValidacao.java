@@ -1,15 +1,7 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
- */
 package br.senai.logica;
 
 import javax.swing.JOptionPane;
 
-/**
- *
- * @author Jhinin
- */
 public class Exercicio34ArrayValidacao {
 
     /*
@@ -25,38 +17,78 @@ Tratamento de Exceções: Utilize o bloco try-catch para tratar eventuais erros 
 dados (se o usuário digitar texto em vez de um valor numérico). Em caso de erro, a aplicação
 deve notificar o usuário e solicitar a entrada da nota novamente, sem encerrar o programa.
 Objetivo: Garantir a robustez do programa contra dados inválidos e formatos incorretos.
- */
-
+     */
     public static void main(String[] args) {
-        //Variaveis
-        int qntNotas = 0; //Programa não informa uma quantidade de notas especifica, então irei solicitar ao usuário que escolha
-        double[] notasAluno = new double[qntNotas]; //Criacao do array
-        String escolha = "S";
 
-        //Mensagem inicial
-        JOptionPane.showMessageDialog(null, "ARRAY COM VALIDACAO");
+        //Mensagem Inicial
+        JOptionPane.showMessageDialog(null, "Verificador de notas.\nInsira a quantidade de notas a serem verificadas.");
 
-        do{
-            try{
-                //Coletando a quantidade de notas
-                qntNotas = Integer.parseInt(JOptionPane.showInputDialog(null, "Insira a quantidade de notas"));
+        //Criação do Array
+        double[] notaAluno = new double[0];
+        
+        //Variável que determina a quantidade de notas
+        int tamanhoArray;
+        
+        //Variável booleana para verificação do preenchimento do campo
+        boolean verificaTamanho = false;
 
+        do {
 
-                //Estrutura de repeticao
-                for(int i = 0; i < qntNotas; i++){
-                    double verificaNota = Double.parseDouble(JOptionPane.showInputDialog(null, "Insira a "+(i + 1)+" nota.\nObs: A nota deve ser entre 0 e 10"));
-                    //Loop para permitir apenas notas dentro do limite estabelecido
-                    while(verificaNota < 0 || verificaNota > 10){
-                        notasAluno[i] = verificaNota;
-                        JOptionPane.showMessageDialog(null, notasAluno[i]);
-                    }
+            try {
+
+                //Variáveis
+                tamanhoArray = Integer.parseInt(JOptionPane.showInputDialog(null, "Insira a quantidade de notas: "));
+
+                if (tamanhoArray < 0) {
+                    JOptionPane.showMessageDialog(null, "Insira um valor acima de 0");
+                } else {
+                    //Preenchimento do Array
+                    notaAluno = new double[tamanhoArray];
+                    verificaTamanho = true;
                 }
-            }catch(NumberFormatException e){
-                JOptionPane.showMessageDialog(null, "ERRO: Dado inserido incorretamente.");
+            } catch (NumberFormatException e) {
+                JOptionPane.showMessageDialog(null, "Informe somente números.");
+            } 
+
+        } while (!verificaTamanho);
+                
+        
+        //Iteração para preenchimento
+        for (int i = 0; i < notaAluno.length; i++) {
+        boolean verificaNota = false;
+
+            //Validação de Intervalo
+            do {
+                try {
+                    notaAluno[i] = Double.parseDouble(JOptionPane.showInputDialog(null, "Insira a " + (i + 1) + "° nota:\nA nota deve estar entre 0.0 e 10.0"));
+
+                    if (notaAluno[i] < 0 || notaAluno[i] > 10) {
+                        JOptionPane.showMessageDialog(null, "Nota fora do intervalo. Tente novamente.");
+                    }else{
+                        verificaNota = true;
+                    }
+
+                    
+
+                } catch (NumberFormatException e) {
+                    JOptionPane.showMessageDialog(null, "Informe somente números.");
+                }
+            } while (!verificaNota);
+
+        } 
+           
+
+            //Exibindo as notas registradas
+            String mensagemFinal = "Dados Finais: "
+                    + "\nQuantidade de notas inseridas: " + notaAluno.length
+                    + "\nNotas informadas: ";
+
+            for (int i = 0; i < notaAluno.length; i++) {
+                mensagemFinal += notaAluno[i] + "  /";
+
             }
-        }while(escolha.equalsIgnoreCase("S"));
 
+            JOptionPane.showMessageDialog(null, mensagemFinal);
 
+        }
     }
-    
-}
